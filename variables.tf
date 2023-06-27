@@ -24,5 +24,6 @@ variable "default_tags" {
   type        = map(any)
   default = {
     "Name" = "Some node"
+    "dept" = "development"
   }
 }
