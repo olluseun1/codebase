@@ -27,3 +27,6 @@ variable "default_tags" {
     "dept" = "development"
   }
 }
+
+variable "bucket" {}
+variable "key" {}
