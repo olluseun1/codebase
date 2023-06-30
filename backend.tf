@@ -6,8 +6,10 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "techbleat-terraform-statefile"
-    key    = "dev/terraform.tfstate"
+    # bucket = "techbleat-terraform-statefile"
+    bucket = var.bucket
+    # key    = "dev/terraform.tfstate"
+    key = var.key
     region = "eu-west-1"
   }
 }
