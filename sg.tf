@@ -8,7 +8,8 @@
 
 
 resource "aws_security_group" "ec2_sg" {
-  name        = "from_terraform_allow_ssh_http"
+  name        = var.sg_name
+  
   description = "Allow SSH and HTTP inbound traffics"
   vpc_id      = "vpc-06b482cd6faff1db9"
 
