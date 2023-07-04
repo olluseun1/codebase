@@ -16,6 +16,6 @@ required_version = ">= 1.2.0"
 }
 
 provider "aws" {
-  profile = "default" # AWS Credentials Profile configured on your local desktop terminal  $HOME/.aws/credentials
+  #profile = "default" # AWS Credentials Profile configured on your local desktop terminal  $HOME/.aws/credentials
   region  = "eu-west-1"
 }
