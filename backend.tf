@@ -2,9 +2,10 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "4.16.0"
+      version = "~> 4.16"
     }
   }
+required_version = ">= 1.2.0"
   backend "s3" {
     # bucket = "techbleat-terraform-statefile"
     bucket = var.bucket
